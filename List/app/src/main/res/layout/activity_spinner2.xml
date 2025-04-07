@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Spinner"
+    android:orientation="vertical"
+
+    android:gravity="center"
+   >
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_height="wrap_content"
+
+        style="@style/MyButton"
+        android:layout_width="wrap_content"
+        android:text="Select an ID proof! "
+        android:textStyle="bold"
+        android:textSize="25dp"
+
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:id="@+id/spinner"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+       />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="20dp"
+            style="@style/MyButton"
+            />
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="12dp"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/actv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACTV"
+            style="@style/MyButton"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="292dp"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+</LinearLayout>
