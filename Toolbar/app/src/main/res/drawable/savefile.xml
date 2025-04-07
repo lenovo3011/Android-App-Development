@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background Rectangle -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/red"
+                android:width="5dp"/>
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+
+    <!-- First Line of Check Mark -->
+    <item android:left="30dp" android:top="50dp" android:right="70dp" android:bottom="100dp">
+        <rotate android:fromDegrees="45">
+            <shape android:shape="line" android:thickness="5dp">
+                <stroke android:width="4dp" android:color="@color/red"/>
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Second Line of Check Mark -->
+    <item android:left="70dp" android:top="100dp" android:right="120dp" android:bottom="50dp">
+        <rotate android:fromDegrees="-45">
+            <shape android:shape="line" android:thickness="5dp">
+                <stroke android:width="4dp" android:color="@color/red"/>
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>
