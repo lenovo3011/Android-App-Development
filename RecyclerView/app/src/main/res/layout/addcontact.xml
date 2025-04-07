@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="20dp"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="@color/lovender">
+
+
+<TextView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:text="Add Contact"
+    android:background="@color/textcolor"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:textSize="25dp"
+    android:id="@+id/t1"
+    android:layout_marginTop="15dp"
+    android:textColor="@color/white"
+    />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name "
+                android:textStyle="bold"
+                android:textColor="@color/textcolor"
+                android:layout_marginRight="10dp"
+                />
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:hint="Enter a Name !"
+
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:id="@+id/name"
+            /> </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      No."
+            android:textStyle="bold"
+            android:layout_marginTop="27dp"
+            android:textColor="@color/textcolor"
+            android:layout_marginRight="10dp"
+            />
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="20dp"
+            android:hint="Enter a Number !"
+            android:layout_gravity="center"
+            android:layout_marginTop="27dp"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:id="@+id/number"
+            />
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/save"
+            android:textStyle="bold"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="180dp"
+            />
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+</RelativeLayout>
