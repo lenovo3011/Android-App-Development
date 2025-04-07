@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/lottie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+      />
+
+    <TextView
+        android:id="@+id/rutvi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rutvi"
+        android:textStyle="bold"
+        android:textSize="150dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+
+        />
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:id="@+id/g1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:columnCount="2">
+
+        <Button
+            android:text="Rotate"
+            android:id="@+id/rotate"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:layout_width="125dp"
+            />
+
+
+        <Button
+            android:id="@+id/alpha"
+            android:textSize="25dp"
+            android:text="Alpha"
+            android:layout_height="50dp"
+            android:layout_width="125dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            />
+
+
+
+        <Button
+            android:id="@+id/scale"
+            android:layout_height="50dp"
+            android:layout_width="125dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Zoom"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+
+
+        <Button
+            android:id="@+id/translate"
+            android:layout_marginLeft="20dp"
+            android:textSize="25dp"
+            android:text="Move"
+            android:layout_height="50dp"
+            android:layout_width="125dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            />
+
+
+
+
+    </GridLayout>
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="125dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_centerInParent="true"
+        android:text="Lottie"
+        android:textSize="25dp"
+        android:id="@+id/lottie"
+        android:textStyle="bold"
+        android:layout_marginBottom="150dp"
+        />
+</RelativeLayout>
