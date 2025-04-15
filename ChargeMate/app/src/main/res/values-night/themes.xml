@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ChargeMate" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+
+    <style name="Theme.MainActivity2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">#5BB5BF</item>
+        <item name="colorPrimary">#4EAED9</item>
+        <item name="colorAccent">@color/black</item>
+
+    </style>
+</resources>

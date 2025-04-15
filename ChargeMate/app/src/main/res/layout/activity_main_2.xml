@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="1">
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="wrap_content"
+      app:cardElevation="10dp"
+      app:cardUseCompatPadding="true"
+      android:layout_height="wrap_content">
+
+
+      <RelativeLayout
+          android:id="@+id/three"
+          android:padding="5dp"
+          android:layout_width="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginBottom="20dp"
+          android:layout_height="wrap_content">
+
+          <ImageView
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_below="@+id/solarvoltage"
+              android:src="@drawable/solar_input"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Solar Voltage"
+              android:id="@+id/solarvoltage"
+              android:textAlignment="center"
+              android:textSize="20dp"
+              android:textStyle="bold" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="21"
+              android:id="@+id/readings"
+              android:textSize="80dp"
+              android:textStyle="bold"
+              android:layout_alignParentEnd="true"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_below="@+id/readings"
+              android:textStyle="bold"
+              android:layout_alignParentRight="true"
+              android:layout_height="wrap_content"
+              android:text="Volts"
+
+
+              />
+
+      </RelativeLayout>
+
+  </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            app:cardElevation="10dp"
+
+            app:cardUseCompatPadding="true"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/batteryvoltage"
+                    android:src="@drawable/batteryvoltage"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Battery Voltage"
+                    android:id="@+id/batteryvoltage"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:id="@+id/readings2"
+                    android:textSize="80dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/readings2"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:text="Volts"
+
+
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            app:cardElevation="10dp"
+
+            app:cardUseCompatPadding="true"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/one"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/totheload"
+                    android:src="@drawable/totheload"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To the load"
+                    android:id="@+id/totheload"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="230"
+                    android:id="@+id/readings3"
+                    android:textSize="80dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/readings3"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:text="Volts"
+
+
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+
+
+</RelativeLayout>
