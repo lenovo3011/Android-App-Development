@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,15 +11,26 @@
 
     <Button
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Show Dialog"
+        android:layout_width="300dp"
+        android:text="Show Default Dialog"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:id="@+id/btn"
+        android:id="@+id/btnd"
+        />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_marginTop="50dp"
+        android:text="Show Custome Dialog"
+        android:layout_below="@id/btnd"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/btnc"
         />
 
 
 
 
 
-</LinearLayout>
+</RelativeLayout>

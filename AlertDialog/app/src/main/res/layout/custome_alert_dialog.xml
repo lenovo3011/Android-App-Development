@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="#FFE38B"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/image"
+        android:src="@drawable/ic_launcher_foreground"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Success"
+        android:layout_toEndOf="@id/image"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operation Successful !"
+        android:background="#EBACFF"
+        android:textColor="#2196F3"
+        android:id="@+id/text2"
+       android:layout_below="@id/image"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_below="@id/text2"
+        android:id="@+id/back"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Back"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/back"
+        android:id="@+id/okay"
+        android:layout_height="wrap_content"
+        android:text="Okay"/>
+
+
+
+
+
+
+</RelativeLayout>
